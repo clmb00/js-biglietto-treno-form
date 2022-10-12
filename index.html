@@ -3,10 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap-grid.min.css' integrity='sha512-a+PObWRxNVh4HZR9wijCGj84JgJ/QhZ8dET09REfYz2clUBjKYhGbOmdy9KEHilYKgbMSIHNQEsonv/r75mHXw==' crossorigin='anonymous'/>
+
   <link rel="stylesheet" href="./style/style.css">
-  <title>Bigleitto Treno</title>
+  <title>Biglietto Treno</title>
 </head>
 <body>
+
+  <div class="container text-center">
+
+    <h2>CALCOLA IL TUO BIGLIETTO</h2>
+    <div class="box">
+      <form>
+        <div class="row row-cols-4">
+          <div class="col d-flex">
+            <h4>Nome Cognome:</h4>
+            <input type="text" placeholder="Mario Rossi">
+          </div>
+          <div class="col d-flex">
+            <h4>Km da percorrere:</h4>
+            <input type="text" placeholder="0">
+          </div>
+          <div class="col d-flex">
+            <h4>Fascia d'età:</h4>
+            <select id="age">
+              <option value="null">Seleziona...</option>
+              <option value="minorenne">Minorenne (1-18 anni))</option>
+              <option value="adulto">Adulto (18+ anni)</option>
+              <option value="senior">Senior (65+ anni)</option>
+              <option value="neonato">Neonato (0-1 anno)</option>
+            </select>
+          </div>
+          <div class="col d-flex">
+            <h4>Classe:</h4>
+            <select id="classe">
+              <option value="null">Seleziona...</option>
+              <option value="standard">Standard</option>
+              <option value="standard-zzz">Standard Silenzio</option>
+              <option value="premium">Premium</option>
+              <option value="business">Business</option>
+              <option value="executive">Executive</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit">GENERA</button>
+        <button type="reset">ANNULLA</button>
+      </form>
+    </div>
+
+    <h2>IL TUO BIGLIETTO</h2>
+    <div class="ticket">
+      <table>
+        <tbody>
+          <tr>
+            <th>Trenitalia</th>
+            <th>BIGLIETTO TRENO</th>
+            <th rowspan="2">N° 1 ADULTO</th>
+          </tr>
+          <tr>
+            <th colspan="2">UTILIZZABILE ENTRO IL 22/10/2022</th>
+          </tr>
+          <tr>
+            <th>TARIFFA 14 KM</th>
+            <th colspan="2">VALE 180 MINUTI DALLA CONVALIDA</th>
+          </tr>
+          <tr>
+            <th colspan="2">Nome Cognome:</th>
+            <th>Classe:</th>
+          </tr>
+          <tr>
+            <th colspan="2">Mario Rossi</th>
+            <th>Standard</th>
+          </tr>
+          <tr>
+            <th>Prezzo:</th>
+            <th colspan="2">24.99 &euro;</th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
 
   <script src="./js/script.js"></script>  
 </body>

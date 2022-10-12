@@ -1,0 +1,75 @@
+/* UTILITY */
+.text-center{
+  text-align: center;
+}
+
+.d-flex{
+  display: flex;
+  flex-direction: column;
+}
+
+/* GENERAL */
+body{
+  background-color: brown;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2{
+  color: white;
+  font-size: 2rem;
+}
+
+h4{
+  color: brown;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.box{
+  background-color: white;
+  box-shadow: 0px 0px 10px black;
+  border-radius: 20px;
+  padding: 20px 100px;
+}
+
+.box input, .box select{
+  border: 1px solid brown;
+  border-radius: 10px;
+  padding: 10px 25px;
+  font-size: 1.1rem;
+}
+
+.box input:focus, .box select:focus{
+  outline: 1px solid brown;
+}
+
+.box button{
+  background-color: white;
+  border: 1px solid brown;
+  font-size: 1.1rem;
+  color: brown;
+  padding: 10px 40px;
+  font-weight: bold;
+  margin: 25px 20px;
+  border-radius: 10px;
+}
+
+.box button:hover{
+  cursor: pointer;
+  outline: 1px solid brown;
+  box-shadow: 0px 0px 5px lightgray;
+}
+
+.box button:active{
+  cursor: pointer;
+  background-color: brown;
+  color: white;
+}
+
+.ticket{
+  background-color: white;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
