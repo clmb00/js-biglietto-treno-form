@@ -12,6 +12,10 @@
   display: none;
 }
 
+.up{
+  text-transform: uppercase;
+}
+
 /* GENERAL */
 body{
   background-color: brown;

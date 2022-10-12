@@ -19,36 +19,36 @@
         <div class="row row-cols-4">
           <div class="col d-flex-co">
             <h4>Nome Cognome:</h4>
-            <input type="text" placeholder="Mario Rossi">
+            <input type="text" placeholder="Mario Rossi" id="userName">
           </div>
           <div class="col d-flex-col">
             <h4>Km da percorrere:</h4>
-            <input type="text" placeholder="0">
+            <input type="text" placeholder="0" id="userKm">
           </div>
           <div class="col d-flex-col">
             <h4>Fascia d'età:</h4>
-            <select id="age">
+            <select id="userAge">
               <option value="null">Seleziona...</option>
-              <option value="minorenne">Minorenne (1-18 anni))</option>
+              <option value="neonato">Neonato (0-1 anno)</option>
+              <option value="minorenne">Minorenne (1-18 anni)</option>
               <option value="adulto">Adulto (18+ anni)</option>
               <option value="senior">Senior (65+ anni)</option>
-              <option value="neonato">Neonato (0-1 anno)</option>
             </select>
           </div>
           <div class="col d-flex-col">
             <h4>Classe:</h4>
-            <select id="classe">
+            <select id="userClass">
               <option value="null">Seleziona...</option>
               <option value="standard">Standard</option>
-              <option value="standard-zzz">Standard Silenzio</option>
+              <option value="standard silenzio">Standard Silenzio</option>
               <option value="premium">Premium</option>
               <option value="business">Business</option>
               <option value="executive">Executive</option>
             </select>
           </div>
         </div>
-        <button type="submit">GENERA</button>
-        <button type="reset">ANNULLA</button>
+        <button type="button">GENERA</button>
+        <button type="reset" id="userTicketIdd">ANNULLA</button>
       </form>
     </div>
 
@@ -56,31 +56,21 @@
     <div class="ticket">
       <table>
         <tbody>
-          <!-- <tr>
-            <td>5%</td>
-            <td>14%</td>
-            <td>14%</td>
-            <td>14%</td>
-            <td>14%</td>
-            <td>14%</td>
-            <td>14%</td>
-            <td>11%</td>
-          </tr> -->
           <tr>
             <td rowspan="6">754925618394918485945824</td>
             <td><strong>TRENITALIA</strong></td>
             <td colspan="3">BIGLIETTO TRENO ALTA VELOCITA</td>
-            <td colspan="2" rowspan="2" style="text-align:center;">N° 1 <i>ADULTI</i></td>
+            <td colspan="2" rowspan="2" style="text-align:center;">N° 1 <i id="userTicketAge" class="up">ADULTO</i></td>
             <td rowspan="6">---</td>
           </tr>
           <tr>
-            <td colspan="4">Utilizzabile entro il <i id="dateEnd">25/04/2023</i></td>
+            <td colspan="4">Utilizzabile entro il <i id="dateEnd">01/01/2023</i></td>
           </tr>
           <tr>
-            <td colspan="2">TARIFFA <i id="userKm">14 KM</i></td>
+            <td colspan="2">TARIFFA <i id="userTicketKm">1</i> KM</td>
             <td colspan="4">
               <span>CODICE BIGLIETTO:</span>
-              <i id="ticketCode">238576</i>
+              <i id="ticketCode">123456</i>
             </td>
           </tr>
           <tr>
@@ -89,12 +79,12 @@
             <td colspan="2" rowspan="2">NO-CAMBIO <br> NO-RIMBORSO</td>
           </tr>
           <tr>
-            <td colspan="2"><i id="userId">MARIO ROSSI</i></td>
-            <td colspan="2"><i id="userClass">STANDARD</i></td>
+            <td colspan="2"><i id="userTicketId" class="up">MARIO ROSSI</i></td>
+            <td colspan="2"><i id="userTicketClass" class="up">STANDARD</i></td>
           </tr>
           <tr>
-            <td colspan="4">Tot-Biglietto N.1 <br> <span id="dateStart">Emesso il 12/04/2023 alle 19:03</span></td>
-            <td colspan="2">Prezzo: <i id="price">25,00</i> &euro;</td>
+            <td colspan="4">Tot-Biglietto N.1 <br> <span id="dateStart">Emesso il 01/01/2023 alle 00:00</span></td>
+            <td colspan="2">Prezzo: <i id="price">1,00</i> &euro;</td>
           </tr>
         </tbody>
       </table>
