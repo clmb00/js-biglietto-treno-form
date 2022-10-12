@@ -3,9 +3,13 @@
   text-align: center;
 }
 
-.d-flex{
+.d-flex-col{
   display: flex;
   flex-direction: column;
+}
+
+.d-none{
+  display: none;
 }
 
 /* GENERAL */
@@ -43,6 +47,10 @@ h4{
   outline: 1px solid brown;
 }
 
+.box select{
+  background-color: white;
+}
+
 .box button{
   background-color: white;
   border: 1px solid brown;
@@ -67,9 +75,50 @@ h4{
 }
 
 .ticket{
-  background-color: white;
+  background-color: rgb(236, 236, 236);
+  background-image: url(../img/logo.png);
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center;
+  width: 900px;
+  margin: 0 auto;
+  font-family: monospace;
+  font-size: 1.2rem;
+  text-align: left;
+  box-shadow: 0px 0px 10px black;
+}
+
+table{
+  table-layout:fixed;
 }
 
 table, th, td {
   border: 1px solid black;
+}
+
+table tr td{
+  padding: 8px 4px;
+  overflow: hidden;
+}
+
+table tr:first-child td:first-child{
+  padding-left: 10px;
+  width: 5%;
+  writing-mode:vertical-lr;
+}
+
+table tr:first-child td:nth-child(2){
+  width: 14%;
+}
+
+table tr:first-child td:nth-child(3){
+  width: 42%;
+}
+
+table tr:first-child td:nth-child(4){
+  width: 28%;
+}
+
+table tr:first-child td:last-child{
+  width: 11%;
 }

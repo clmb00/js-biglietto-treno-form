@@ -17,15 +17,15 @@
     <div class="box">
       <form>
         <div class="row row-cols-4">
-          <div class="col d-flex">
+          <div class="col d-flex-co">
             <h4>Nome Cognome:</h4>
             <input type="text" placeholder="Mario Rossi">
           </div>
-          <div class="col d-flex">
+          <div class="col d-flex-col">
             <h4>Km da percorrere:</h4>
             <input type="text" placeholder="0">
           </div>
-          <div class="col d-flex">
+          <div class="col d-flex-col">
             <h4>Fascia d'età:</h4>
             <select id="age">
               <option value="null">Seleziona...</option>
@@ -35,7 +35,7 @@
               <option value="neonato">Neonato (0-1 anno)</option>
             </select>
           </div>
-          <div class="col d-flex">
+          <div class="col d-flex-col">
             <h4>Classe:</h4>
             <select id="classe">
               <option value="null">Seleziona...</option>
@@ -56,29 +56,45 @@
     <div class="ticket">
       <table>
         <tbody>
+          <!-- <tr>
+            <td>5%</td>
+            <td>14%</td>
+            <td>14%</td>
+            <td>14%</td>
+            <td>14%</td>
+            <td>14%</td>
+            <td>14%</td>
+            <td>11%</td>
+          </tr> -->
           <tr>
-            <th>Trenitalia</th>
-            <th>BIGLIETTO TRENO</th>
-            <th rowspan="2">N° 1 ADULTO</th>
+            <td rowspan="6">754925618394918485945824</td>
+            <td><strong>TRENITALIA</strong></td>
+            <td colspan="3">BIGLIETTO TRENO ALTA VELOCITA</td>
+            <td colspan="2" rowspan="2" style="text-align:center;">N° 1 <i>ADULTI</i></td>
+            <td rowspan="6">---</td>
           </tr>
           <tr>
-            <th colspan="2">UTILIZZABILE ENTRO IL 22/10/2022</th>
+            <td colspan="4">Utilizzabile entro il <i id="dateEnd">25/04/2023</i></td>
           </tr>
           <tr>
-            <th>TARIFFA 14 KM</th>
-            <th colspan="2">VALE 180 MINUTI DALLA CONVALIDA</th>
+            <td colspan="2">TARIFFA <i id="userKm">14 KM</i></td>
+            <td colspan="4">
+              <span>CODICE BIGLIETTO:</span>
+              <i id="ticketCode">238576</i>
+            </td>
           </tr>
           <tr>
-            <th colspan="2">Nome Cognome:</th>
-            <th>Classe:</th>
+            <td colspan="2">NOME E COGNOME</td>
+            <td colspan="2">CLASSE</td>
+            <td colspan="2" rowspan="2">NO-CAMBIO <br> NO-RIMBORSO</td>
           </tr>
           <tr>
-            <th colspan="2">Mario Rossi</th>
-            <th>Standard</th>
+            <td colspan="2"><i id="userId">MARIO ROSSI</i></td>
+            <td colspan="2"><i id="userClass">STANDARD</i></td>
           </tr>
           <tr>
-            <th>Prezzo:</th>
-            <th colspan="2">24.99 &euro;</th>
+            <td colspan="4">Tot-Biglietto N.1 <br> <span id="dateStart">Emesso il 12/04/2023 alle 19:03</span></td>
+            <td colspan="2">Prezzo: <i id="price">25,00</i> &euro;</td>
           </tr>
         </tbody>
       </table>
