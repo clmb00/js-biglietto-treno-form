@@ -9,16 +9,17 @@ document.querySelector('.box button').addEventListener('click',function(){
   const userClass = document.getElementById('userClass').value;
   const ticketCode = Math.floor(Math.random()*(999999-100000+1)+100000);
   const d = new Date();
-  console.log(d);
+  console.log(userKm);
   let prezzoBiglietto;
 
-  if(isNaN(userKm)){
-    alert("Inserisci i km in numero!");
+  
+  if((userName.trim().indexOf(' ') == -1)){
+    alert("Inserisci nome e cognome!");
     return;
   };
 
-  if((userName.trim().indexOf(' ') == -1)){
-    alert("Inserisci nome e cognome!");
+  if(isNaN(userKm) || userKm == ""){
+    alert("Inserisci i km in numero!");
     return;
   };
 
