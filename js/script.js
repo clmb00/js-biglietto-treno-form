@@ -59,4 +59,10 @@ document.querySelector('.box button').addEventListener('click',function(){
   document.getElementById("userTicketClass").innerHTML = userClass;
   document.getElementById("userTicketAge").innerHTML = userAge;
   document.getElementById("ticketCode").innerHTML = ticketCode;
+
+  document.querySelector('.ticket').classList.remove('hide');
+});
+
+document.querySelector('.box #resetButton').addEventListener('click',function(){
+  document.querySelector('.ticket').classList.add('hide');
 });
